@@ -1,1 +1,1 @@
-# inpe-alertas
+### Repositório para testar CI/CD (GitHub Actions)
