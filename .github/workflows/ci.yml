@@ -1,4 +1,4 @@
-name: CI com ESLint
+name: CI com ESLint e Testes
 
 on: 
   push: 
@@ -7,7 +7,7 @@ on:
     branches: [dev]
 
 jobs:
-  lint:
+  lint-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,3 +24,7 @@ jobs:
 
       - name: Rodar ESLint
         run: npx eslint .
+
+      - name: Rodar Jest
+        run: npm test
+      
